@@ -2,14 +2,15 @@ import {
   Image,
   StyleSheet,
   Text,
-  ViewStylePropTypes as _RNViewStylePropTypes
+  ViewPropTypes
 } from 'react-native'
 
 import PropTypes from 'prop-types';
 import React from 'react'
 
-const _RNImageStylePropTypes = Image.propTypes;
-const _RNTextStylePropTypes = Text.propTypes;
+const _RNImageStylePropTypes = Image.propTypes.style;
+const _RNTextStylePropTypes = Text.propTypes.style;
+const _RNViewStylePropTypes = ViewPropTypes.style;
 
 const RNTextStylePropTypes = Object.keys(_RNTextStylePropTypes)
   .reduce((acc, k) => { acc[k] = _RNTextStylePropTypes[k]; return acc }, {})

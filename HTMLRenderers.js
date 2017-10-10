@@ -1,6 +1,7 @@
-import React from 'react'
-import { TouchableOpacity, Text, Image } from 'react-native'
+import { Image, Text, TouchableOpacity } from 'react-native'
+
 import HTMLStyles from './HTMLStyles'
+import React from 'react'
 
 module.exports = {
   /**
